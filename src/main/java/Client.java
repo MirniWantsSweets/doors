@@ -17,7 +17,7 @@ public class Client {
             new Log(
                 new FireAlarm(fireAlarmCode,
                     new Open(openCode, null)));
-        Door d1 = new Door("d1", chain1);
+        Door d1 = new Door("d1", chain3);
 
         d1.processCode("1111"); // opens
         d1.processCode("2222"); // opens and fires alarm

@@ -7,7 +7,7 @@ public class FireAlarm extends CodeHandler {
 
     @Override
     public void handleCode(String code, Door door) {
-        System.out.println("handle fire alarm");
+        //System.out.println("handle fire alarm");
         if(doorLocked == false) {
             if(codeFire.equals(code)) {
                 resetDoorState();
@@ -16,8 +16,6 @@ public class FireAlarm extends CodeHandler {
                 System.out.print("Fire alarm sent at some private surveillance station \n");
             }
             else {
-                numTrials++;
-                System.out.println(numTrials + " trials");
                 if(next != null) next.handleCode(code, door);
             }
         }

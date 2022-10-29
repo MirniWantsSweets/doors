@@ -1,0 +1,51 @@
+Code of the door: 1111
+Id of the door: d1
+The time and Date is: 2022-10-29 17:35:41
+State of the door: Door unlocked
+door d1 opened
+Code of the door: 2222
+Id of the door: d1
+The time and Date is: 2022-10-29 17:35:42
+State of the door: Door unlocked
+The fire alarm code is ON 
+door d1 opened
+Fire alarm sent at some private surveillance station 
+Code of the door: 1234
+Id of the door: d1
+The time and Date is: 2022-10-29 17:35:42
+State of the door: Door unlocked
+Incorrect code. Try number: 1
+Code of the door: 4321
+Id of the door: d1
+The time and Date is: 2022-10-29 17:35:42
+State of the door: Door unlocked
+Incorrect code. Try number: 2
+Code of the door: 5555
+Id of the door: d1
+The time and Date is: 2022-10-29 17:35:42
+State of the door: Door unlocked
+Incorrect code. Try number: 3
+Code of the door: 6666
+Id of the door: d1
+The time and Date is: 2022-10-29 17:35:42
+State of the door: Door locked
+Code of the door: 7777
+Id of the door: d1
+The time and Date is: 2022-10-29 17:35:42
+State of the door: Door locked
+Code of the door: 1111
+Id of the door: d1
+The time and Date is: 2022-10-29 17:35:42
+State of the door: Door locked
+Code of the door: 3333
+Id of the door: d1
+The time and Date is: 2022-10-29 17:35:42
+State of the door: Door locked
+Door unlocked
+Code of the door: 2222
+Id of the door: d1
+The time and Date is: 2022-10-29 17:35:42
+State of the door: Door unlocked
+The fire alarm code is ON 
+door d1 opened
+Fire alarm sent at some private surveillance station

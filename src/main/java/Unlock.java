@@ -8,9 +8,9 @@ public class Unlock extends CodeHandler {
     @Override
     protected void handleCode(String code, Door door) {
         if(codeUnLocked.equals(code)) {
-            System.out.println("Door opened");
-            code = "1111";
-            if (next != null) next.handleCode(code, door);
+            System.out.println("Door unlocked");
+            doorLocked = false;
+            //if (next != null) next.handleCode(code, door);
         } else {
             if (next != null) next.handleCode(code, door);
         }

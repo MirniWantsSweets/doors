@@ -7,15 +7,13 @@ public class Open extends CodeHandler {
 
     @Override
     public void handleCode(String code, Door door) {
-        System.out.println("handle fire alarm");
+        //System.out.println("handle open");
         if(!doorLocked) {
             if(codeOpen.equals(code)) {
                 resetDoorState();
                 door.open();
             }
             else {
-                numTrials++;
-                System.out.println(numTrials + " trials");
                 if (next != null) next.handleCode(code, door);
             }
         } else {
