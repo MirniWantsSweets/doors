@@ -1,3 +1,52 @@
 @startuml
 
+class Door{
+    -id: String
+    -codeHandler: CodeHandler
+    +processCode(code: String)
+    +open()
+    +Door(id: String, codeHandler: CodeHandler)
+}
+
+Abstract Class CodeHandler{
+    -next: CodeHandler
+    #numTrials: int
+    #<u>boolean doorLocked
+    +CodeHandler(next: CodeHandler)
+    #resetDoorState()
+}
+
+class Log {
+    +handleCode(code: String, door: Door)
+}
+
+class Open {
+    -code: String
+    +Open(code: int, nextHandler: CodeHandler)
+    +handleCode(code: String, door: Door)
+}
+
+class FireAlarm {
+    -code: String
+    +FireAlarm(code: int, nextHandler: CodeHandler)
+    +handleCode(code: String, door: Door)
+}
+class Unlock {
+    -code: String
+    +Unlock(code: int, nextHandler: CodeHandler)
+    +handleCode(code: String, door: Door)
+}
+class Lock {
+    +Lock(code: int, nextHandler: CodeHandler)
+    +handleCode(code: String, door: Door)
+}
+
+Log --|> CodeHandler
+Open --|> CodeHandler
+FireAlarm --|> CodeHandler
+Unlock --|> CodeHandler
+Lock --|> CodeHandler
+Door "1" --> "handler" CodeHandler
+CodeHandler "0,1" --> "nextHandler" CodeHandler
+
 @enduml
